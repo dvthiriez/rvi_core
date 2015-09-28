@@ -1,0 +1,1056 @@
+
+=====
+===== LOGGING STARTED Thu Sep 24 19:53:55 EDT 2015
+=====
+19:53:55.921 [warning] connection:handle_cast(): Unknown info: {tcp_error,#Port<0.3499>,etimedout}
+19:53:55.922 [debug] connection:handle_info(tcp_closed): Address: "166.171.121.157":23876 
+19:53:55.922 [info] dlink_tcp:closed(): SetupAddress:  {"166.171.121.157", 23876}
+19:53:55.923 [debug] get_module_config(): Missing component spec: rvi:component:data_link:dlink_tcp_rpc:persistent_connections{...}: [{server_opts,[{port,8807}]}]
+19:53:55.923 [debug] connection_manager:handle_call(del_by_pid): deleted Pid: <0.945.0>, Address: {"10.203.236.116",1}
+19:53:55.923 [debug] connection:terminate(): Reason: normal 
+19:54:18.290 [warning] connection:handle_cast(): Unknown info: {tcp_error,#Port<0.4352>,etimedout}
+19:54:18.291 [debug] connection:handle_info(tcp_closed): Address: "166.171.121.157":3734 
+19:54:18.291 [info] dlink_tcp:closed(): SetupAddress:  {"166.171.121.157", 3734} 
+19:54:18.291 [debug] get_module_config(): Missing component spec: rvi:component:data_link:dlink_tcp_rpc:persistent_connections{...}: [{server_opts,[{port,8807}]}]
+19:54:18.291 [debug] connection_manager:handle_call(del_by_pid): deleted Pid: <0.1498.0>, Address: {"10.203.236.116",1}
+19:54:18.292 [debug] connection:terminate(): Reason: normal 
+19:54:25.134 [warning] connection:handle_cast(): Unknown info: {tcp_error,#Port<0.4132>,etimedout}
+19:54:25.135 [debug] connection:handle_info(tcp_closed): Address: "166.171.121.157":26910 
+19:54:25.135 [info] dlink_tcp:closed(): SetupAddress:  {"166.171.121.157", 26910}
+19:54:25.135 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_provision"],dlink_tcp_rpc]) 
+19:54:25.136 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_response"],dlink_tcp_rpc])
+19:54:25.136 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]
+19:54:25.136 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_accountdetails"],dlink_tcp_rpc])
+19:54:25.136 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.137 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"],dlink_tcp_rpc])
+19:54:25.137 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]) unavailable
+19:54:25.137 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_provision"],dlink_tcp_rpc]) 
+19:54:25.138 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.138 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_response"],dlink_tcp_rpc])
+19:54:25.138 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.138 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_accountdetails"],dlink_tcp_rpc])
+19:54:25.139 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.139 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"],dlink_tcp_rpc])
+19:54:25.139 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.139 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_provision"],dlink_tcp_rpc]) 
+19:54:25.140 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.140 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_response"],dlink_tcp_rpc])
+19:54:25.140 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.141 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_provision":
+19:54:25.141 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/dm/cert_accountdetails"],dlink_tcp_rpc])
+19:54:25.141 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.141 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.142 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"],dlink_tcp_rpc])
+19:54:25.142 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.142 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.143 [debug] get_module_config(): Missing component spec: rvi:component:data_link:dlink_tcp_rpc:persistent_connections{...}: [{server_opts,[{port,8807}]}]
+19:54:25.143 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.143 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.144 [debug] connection_manager:handle_call(del_by_pid): deleted Pid: <0.1470.0>, Address: {"10.203.236.116",1}
+19:54:25.144 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]
+19:54:25.144 [debug] sched:service_unavailable(): Service {"jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc} now has no address.
+19:54:25.144 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.145 [debug] connection:terminate(): Reason: normal 
+19:54:25.145 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.145 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.146 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]) unavailable
+19:54:25.146 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.146 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.146 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.147 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.147 [debug] announce: Block:   []
+19:54:25.147 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.147 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.148 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.148 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.148 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.148 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.149 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.149 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.149 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.149 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.150 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.150 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.151 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]
+19:54:25.151 [debug] sched:service_unavailable(): Service {"jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc} now has no address.
+19:54:25.152 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.152 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.152 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]) unavailable
+19:54:25.153 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.153 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.153 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.153 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.155 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.155 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.156 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.156 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.156 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.156 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.157 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.157 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.157 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.158 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.158 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.158 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.158 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.159 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.159 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]
+19:54:25.160 [debug] sched:service_unavailable(): Service {"jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc} now has no address.
+19:54:25.160 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.161 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.161 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.161 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]) unavailable
+19:54:25.161 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.162 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.163 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.164 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.164 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.164 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.164 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.165 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.165 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.165 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.165 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.166 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]() 
+19:54:25.166 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.166 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.167 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.168 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.168 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.168 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]
+19:54:25.169 [debug] sched:service_unavailable(): Service {"jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc} now has no address.
+19:54:25.169 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.169 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.169 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.170 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]) unavailable
+19:54:25.171 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.171 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.172 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.172 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.172 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.173 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.173 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.173 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.173 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.174 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.174 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.174 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.175 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.176 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.176 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.176 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.177 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.177 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]
+19:54:25.177 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.177 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.179 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.179 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]) unavailable
+19:54:25.179 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.180 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.180 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_response":
+19:54:25.180 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.181 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.181 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.181 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.181 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.182 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.182 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.182 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.183 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.183 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.183 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.184 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.184 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.184 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.185 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.185 [debug] announce: Block:   []
+19:54:25.185 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]
+19:54:25.185 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.186 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.186 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.186 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]) unavailable
+19:54:25.186 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.187 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.187 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.187 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.188 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.188 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.188 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.189 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.189 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.189 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.190 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.190 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.190 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.190 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.192 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.192 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.192 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.193 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]
+19:54:25.193 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.193 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.194 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.194 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]) unavailable
+19:54:25.194 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.194 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.195 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.195 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.195 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.196 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.196 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.197 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.197 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.197 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]() 
+19:54:25.198 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.198 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.198 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.199 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.200 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.200 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.201 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.201 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]
+19:54:25.201 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.202 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.202 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.202 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]) unavailable
+19:54:25.202 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.203 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.203 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.203 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.204 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.204 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.205 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.205 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.205 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.206 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.206 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.206 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.207 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.208 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_provision"]()
+19:54:25.208 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.209 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_provision",dlink_tcp_rpc])
+19:54:25.209 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.209 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]
+19:54:25.210 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.210 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.210 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.210 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]) unavailable
+19:54:25.211 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.211 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.212 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.212 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.212 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.213 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.213 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.213 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.213 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.214 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.215 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.215 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.215 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.216 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_response"]()
+19:54:25.216 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_accountdetails":
+19:54:25.216 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_response",dlink_tcp_rpc])
+19:54:25.217 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.217 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]
+19:54:25.217 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.218 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.218 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.218 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]) unavailable
+19:54:25.218 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.219 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.219 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.219 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.220 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.220 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.220 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.220 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.221 [debug] announce: Block:   []
+19:54:25.221 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.221 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.222 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.222 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.222 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.223 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.223 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]()
+19:54:25.223 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.223 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/dm/cert_accountdetails",dlink_tcp_rpc])
+19:54:25.224 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.224 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]
+19:54:25.224 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.225 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]) unavailable
+19:54:25.225 [debug]   notify_subscribers module: service_edge_rpc 
+19:54:25.226 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.226 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:54:25.226 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.226 [debug]   notify_subscribers module: schedule_rpc 
+19:54:25.227 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.227 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.228 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.228 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.229 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.229 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]() 
+19:54:25.230 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.230 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.230 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.230 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]()
+19:54:25.231 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.231 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest",dlink_tcp_rpc])
+19:54:25.231 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.232 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.233 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.233 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.233 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.234 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.235 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.235 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.235 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.236 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.236 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.237 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.237 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.237 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.239 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.239 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.239 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.240 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.240 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.240 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.241 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.241 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.242 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.243 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.243 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.244 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest":
+19:54:25.244 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.244 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.244 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.245 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.245 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.245 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.246 [debug] announce: service: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.246 [debug] announce: Block:   []
+19:54:25.246 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.246 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.247 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.247 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.247 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.248 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.248 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.249 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.250 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.250 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.251 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.251 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.251 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.251 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.252 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.253 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.253 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.253 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.254 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.255 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.255 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.255 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.256 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.256 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.257 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.257 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.257 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.259 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.259 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.259 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.260 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.260 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.260 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.261 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.261 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.262 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.263 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.264 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.264 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_provision":
+19:54:25.264 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.265 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.265 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.265 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.266 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.266 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.266 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.267 [debug] announce: Block:   []
+19:54:25.267 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.267 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.267 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.268 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.268 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.269 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.269 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.269 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.271 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.271 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.271 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.272 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.272 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.272 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.272 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.273 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.274 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.274 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.275 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.276 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.276 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.276 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.276 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.277 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.278 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.278 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.278 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.279 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.280 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.280 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.280 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.280 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.281 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.282 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.282 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.282 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.283 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.284 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.284 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_response":
+19:54:25.284 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.285 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.285 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.285 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.286 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.286 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.286 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.287 [debug] announce: Block:   []
+19:54:25.287 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.287 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.287 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.288 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.288 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.289 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.289 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.289 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.291 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.291 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.291 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.292 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.292 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.292 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.292 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.293 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.294 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.294 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.295 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.295 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.296 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.296 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.296 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.296 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.297 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.297 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.298 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.299 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.300 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.300 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.300 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.300 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.301 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.302 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.302 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.302 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.303 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.304 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.304 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_accountdetails":
+19:54:25.305 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.305 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.305 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.305 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.306 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.306 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.306 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.306 [debug] announce: Block:   []
+19:54:25.307 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.307 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.307 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.307 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.307 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.308 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.308 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.309 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.310 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.311 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.311 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.311 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.311 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.312 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.312 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.313 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.313 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.313 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.314 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.315 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.315 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.315 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.316 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.316 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.317 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.317 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.317 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.318 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.319 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.319 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.319 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.320 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.320 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.321 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.321 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.321 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.323 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.323 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.323 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest":
+19:54:25.324 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.324 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.324 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.324 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.325 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.325 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.325 [debug] announce: service: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.326 [debug] announce: Block:   []
+19:54:25.326 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.326 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.326 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.327 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.327 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.328 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.328 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.328 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.330 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.330 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.331 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.331 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.331 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.331 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.332 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.332 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.333 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.333 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.334 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.334 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.335 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.335 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.335 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.335 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.336 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.336 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.337 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.338 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.338 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.339 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.339 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.339 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.339 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.341 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.341 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.341 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.342 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.343 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.343 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_provision":
+19:54:25.343 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.344 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.344 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.344 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.344 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.345 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.345 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_provision"
+19:54:25.345 [debug] announce: Block:   []
+19:54:25.345 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.346 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.346 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.346 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.346 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.347 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.347 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.348 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.349 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.349 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.349 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.350 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.350 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.350 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.351 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.352 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.352 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.352 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.353 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.354 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.354 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.354 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.355 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.355 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.356 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.356 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.357 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.358 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.358 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.359 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.359 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.359 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_provision"]}}]}
+19:54:25.360 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.360 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.361 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.361 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.362 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.363 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.363 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_response":
+19:54:25.363 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.364 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.364 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.364 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.365 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.365 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.365 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_response"
+19:54:25.365 [debug] announce: Block:   []
+19:54:25.366 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.366 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.366 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.367 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.367 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.368 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.368 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.368 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.370 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.370 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.370 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.371 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.371 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.371 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.371 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.373 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.373 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.373 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.374 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.375 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.375 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.375 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.375 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.376 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.376 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.377 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.377 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.378 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.379 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.379 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.379 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.379 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_response"]}}]}
+19:54:25.380 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.380 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.381 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.381 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.382 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.382 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.383 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/dm/cert_accountdetails":
+19:54:25.383 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.383 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.384 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.384 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.384 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.384 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.385 [debug] announce: service: "jlr.com/mobile/353490069936629/dm/cert_accountdetails"
+19:54:25.385 [debug] announce: Block:   []
+19:54:25.385 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.385 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.385 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.386 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.386 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.387 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.387 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.387 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.388 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.389 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.389 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.389 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.390 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.390 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.390 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.391 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.391 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.391 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.392 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.393 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.393 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.394 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.394 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.394 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.395 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.395 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.395 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.396 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.397 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.397 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.397 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.398 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/dm/cert_accountdetails"]}}]}
+19:54:25.398 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.399 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.399 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.399 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.401 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.401 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.402 [debug] service_edge_rpc: Service unavailable: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest":
+19:54:25.402 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:54:25.402 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:54:25.402 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:54:25.403 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:54:25.403 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:54:25.403 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:54:25.404 [debug] announce: service: "jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"
+19:54:25.404 [debug] announce: Block:   []
+19:54:25.404 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:54:25.404 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:54:25.405 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.405 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.405 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:54:25.406 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.406 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.407 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.408 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.409 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.409 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:54:25.409 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:54:25.409 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.410 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.410 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:54:25.411 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.411 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.411 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.412 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.413 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.413 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:54:25.414 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.414 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.414 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:54:25.415 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.416 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.416 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.417 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.418 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:54:25.418 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:54:25.418 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:54:25.418 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/mobile/353490069936629/report/serviceinvokedbyguest"]}}]}
+19:54:25.419 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:54:25.420 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:54:25.420 [debug] <0.904.0> exo_socket: connect protos=[]
+19:54:25.420 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:54:25.421 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:54:25 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:54:25.422 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+
+===== ALIVE Thu Sep 24 20:09:25 EDT 2015
+
+===== ALIVE Thu Sep 24 20:24:25 EDT 2015
+
+===== ALIVE Thu Sep 24 20:39:25 EDT 2015
+
+===== ALIVE Thu Sep 24 20:54:25 EDT 2015
+
+===== ALIVE Thu Sep 24 21:09:25 EDT 2015
+
+===== ALIVE Thu Sep 24 21:24:26 EDT 2015
+
+===== ALIVE Thu Sep 24 21:39:26 EDT 2015
+
+===== ALIVE Thu Sep 24 21:54:26 EDT 2015
+
+===== ALIVE Thu Sep 24 22:09:26 EDT 2015
+
+===== ALIVE Thu Sep 24 22:24:26 EDT 2015
+
+===== ALIVE Thu Sep 24 22:39:26 EDT 2015
+
+===== ALIVE Thu Sep 24 22:54:26 EDT 2015
+
+===== ALIVE Thu Sep 24 23:09:26 EDT 2015
+
+===== ALIVE Thu Sep 24 23:24:26 EDT 2015
+
+===== ALIVE Thu Sep 24 23:39:26 EDT 2015
+
+===== ALIVE Thu Sep 24 23:54:26 EDT 2015
+
+===== ALIVE Fri Sep 25 00:09:27 EDT 2015
+
+===== ALIVE Fri Sep 25 00:24:27 EDT 2015
+
+===== ALIVE Fri Sep 25 00:39:27 EDT 2015
+
+===== ALIVE Fri Sep 25 00:54:27 EDT 2015
+
+===== ALIVE Fri Sep 25 01:09:27 EDT 2015
+
+===== ALIVE Fri Sep 25 01:24:27 EDT 2015
+
+===== ALIVE Fri Sep 25 01:39:27 EDT 2015
+
+===== ALIVE Fri Sep 25 01:54:27 EDT 2015
+
+===== ALIVE Fri Sep 25 02:09:27 EDT 2015
+
+===== ALIVE Fri Sep 25 02:24:27 EDT 2015
+
+===== ALIVE Fri Sep 25 02:39:27 EDT 2015
+
+===== ALIVE Fri Sep 25 02:54:27 EDT 2015
+
+===== ALIVE Fri Sep 25 03:09:28 EDT 2015
+
+===== ALIVE Fri Sep 25 03:24:28 EDT 2015
+
+===== ALIVE Fri Sep 25 03:39:28 EDT 2015
+
+===== ALIVE Fri Sep 25 03:54:28 EDT 2015
+
+===== ALIVE Fri Sep 25 04:09:28 EDT 2015
+
+===== ALIVE Fri Sep 25 04:24:28 EDT 2015
+
+===== ALIVE Fri Sep 25 04:39:28 EDT 2015
+
+===== ALIVE Fri Sep 25 04:54:28 EDT 2015
+
+===== ALIVE Fri Sep 25 05:09:28 EDT 2015
+
+===== ALIVE Fri Sep 25 05:24:28 EDT 2015
+
+===== ALIVE Fri Sep 25 05:39:28 EDT 2015
+
+===== ALIVE Fri Sep 25 05:54:28 EDT 2015
+
+===== ALIVE Fri Sep 25 06:09:29 EDT 2015
+
+===== ALIVE Fri Sep 25 06:24:29 EDT 2015
+
+===== ALIVE Fri Sep 25 06:39:29 EDT 2015
+
+===== ALIVE Fri Sep 25 06:54:29 EDT 2015
+
+===== ALIVE Fri Sep 25 07:09:29 EDT 2015
+
+===== ALIVE Fri Sep 25 07:24:29 EDT 2015
+
+===== ALIVE Fri Sep 25 07:39:29 EDT 2015
+
+===== ALIVE Fri Sep 25 07:54:29 EDT 2015
+
+===== ALIVE Fri Sep 25 08:09:29 EDT 2015
+
+===== ALIVE Fri Sep 25 08:24:29 EDT 2015
+
+===== ALIVE Fri Sep 25 08:39:29 EDT 2015
+
+===== ALIVE Fri Sep 25 08:54:30 EDT 2015
+
+===== ALIVE Fri Sep 25 09:09:30 EDT 2015
+
+===== ALIVE Fri Sep 25 09:24:30 EDT 2015
+
+===== ALIVE Fri Sep 25 09:39:30 EDT 2015
+
+===== ALIVE Fri Sep 25 09:54:30 EDT 2015
+
+===== ALIVE Fri Sep 25 10:09:30 EDT 2015
+
+===== ALIVE Fri Sep 25 10:24:30 EDT 2015
+
+===== ALIVE Fri Sep 25 10:39:30 EDT 2015
+
+===== ALIVE Fri Sep 25 10:54:30 EDT 2015
+
+===== ALIVE Fri Sep 25 11:09:30 EDT 2015
+
+===== ALIVE Fri Sep 25 11:24:30 EDT 2015
+
+===== ALIVE Fri Sep 25 11:39:30 EDT 2015
+
+===== ALIVE Fri Sep 25 11:54:31 EDT 2015
+
+===== ALIVE Fri Sep 25 12:09:31 EDT 2015
+
+===== ALIVE Fri Sep 25 12:24:31 EDT 2015
+
+===== ALIVE Fri Sep 25 12:39:31 EDT 2015
+
+===== ALIVE Fri Sep 25 12:54:31 EDT 2015
+
+===== ALIVE Fri Sep 25 13:09:31 EDT 2015
+
+===== ALIVE Fri Sep 25 13:24:31 EDT 2015
+
+===== ALIVE Fri Sep 25 13:39:31 EDT 2015
+
+===== ALIVE Fri Sep 25 13:54:31 EDT 2015
+
+===== ALIVE Fri Sep 25 14:09:31 EDT 2015
+
+===== ALIVE Fri Sep 25 14:24:31 EDT 2015
+
+===== ALIVE Fri Sep 25 14:39:31 EDT 2015
+
+===== ALIVE Fri Sep 25 14:54:31 EDT 2015
+
+===== ALIVE Fri Sep 25 15:09:32 EDT 2015
+
+===== ALIVE Fri Sep 25 15:24:32 EDT 2015
+
+===== ALIVE Fri Sep 25 15:39:32 EDT 2015
+
+===== ALIVE Fri Sep 25 15:54:32 EDT 2015
+
+===== ALIVE Fri Sep 25 16:09:32 EDT 2015
+
+===== ALIVE Fri Sep 25 16:24:32 EDT 2015
+
+===== ALIVE Fri Sep 25 16:39:32 EDT 2015
+
+===== ALIVE Fri Sep 25 16:54:32 EDT 2015
+
+===== ALIVE Fri Sep 25 17:09:32 EDT 2015
+
+===== ALIVE Fri Sep 25 17:24:32 EDT 2015
+
+===== ALIVE Fri Sep 25 17:39:32 EDT 2015
+
+===== ALIVE Fri Sep 25 17:54:33 EDT 2015
+
+===== ALIVE Fri Sep 25 18:09:33 EDT 2015
+
+===== ALIVE Fri Sep 25 18:24:33 EDT 2015
+
+===== ALIVE Fri Sep 25 18:39:33 EDT 2015
+
+===== ALIVE Fri Sep 25 18:54:33 EDT 2015
+
+===== ALIVE Fri Sep 25 19:09:33 EDT 2015
+
+===== ALIVE Fri Sep 25 19:24:33 EDT 2015
+
+===== ALIVE Fri Sep 25 19:39:33 EDT 2015
+
+===== ALIVE Fri Sep 25 19:54:33 EDT 2015
+
+===== ALIVE Fri Sep 25 20:09:33 EDT 2015
+
+===== ALIVE Fri Sep 25 20:24:33 EDT 2015
+
+===== ALIVE Fri Sep 25 20:39:33 EDT 2015
+
+===== ALIVE Fri Sep 25 20:54:34 EDT 2015
+
+===== ALIVE Fri Sep 25 21:09:34 EDT 2015
+
+===== ALIVE Fri Sep 25 21:24:34 EDT 2015
+
+===== ALIVE Fri Sep 25 21:39:34 EDT 2015
+
+===== ALIVE Fri Sep 25 21:54:34 EDT 2015
+
+===== ALIVE Fri Sep 25 22:09:34 EDT 2015
+
+===== ALIVE Fri Sep 25 22:24:34 EDT 2015
+
+===== ALIVE Fri Sep 25 22:39:34 EDT 2015
+
+===== ALIVE Fri Sep 25 22:54:34 EDT 2015
+
+===== ALIVE Fri Sep 25 23:09:34 EDT 2015
+
+===== ALIVE Fri Sep 25 23:24:34 EDT 2015
+
+===== ALIVE Fri Sep 25 23:39:34 EDT 2015
+
+===== ALIVE Fri Sep 25 23:54:35 EDT 2015
+
+===== ALIVE Sat Sep 26 00:09:35 EDT 2015
+
+===== ALIVE Sat Sep 26 00:24:35 EDT 2015
+
+===== ALIVE Sat Sep 26 00:39:35 EDT 2015
+
+===== ALIVE Sat Sep 26 00:54:35 EDT 2015
+
+===== ALIVE Sat Sep 26 01:09:35 EDT 2015
+
+===== ALIVE Sat Sep 26 01:24:35 EDT 2015
+
+===== ALIVE Sat Sep 26 01:39:35 EDT 2015
+
+===== ALIVE Sat Sep 26 01:54:35 EDT 2015
+
+===== ALIVE Sat Sep 26 02:09:35 EDT 2015
+
+===== ALIVE Sat Sep 26 02:24:36 EDT 2015
+
+===== ALIVE Sat Sep 26 02:39:36 EDT 2015
+
+===== ALIVE Sat Sep 26 02:54:36 EDT 2015
+
+===== ALIVE Sat Sep 26 03:09:36 EDT 2015
+
+===== ALIVE Sat Sep 26 03:24:36 EDT 2015
+
+===== ALIVE Sat Sep 26 03:39:36 EDT 2015
+
+===== ALIVE Sat Sep 26 03:54:36 EDT 2015
+
+===== ALIVE Sat Sep 26 04:09:36 EDT 2015
+
+===== ALIVE Sat Sep 26 04:24:36 EDT 2015
+
+===== ALIVE Sat Sep 26 04:39:36 EDT 2015
+
+===== ALIVE Sat Sep 26 04:54:36 EDT 2015
+
+===== ALIVE Sat Sep 26 05:09:36 EDT 2015
+
+===== ALIVE Sat Sep 26 05:24:36 EDT 2015
+
+===== ALIVE Sat Sep 26 05:39:36 EDT 2015
+
+===== ALIVE Sat Sep 26 05:54:36 EDT 2015
+
+===== ALIVE Sat Sep 26 06:09:37 EDT 2015
+
+===== ALIVE Sat Sep 26 06:24:37 EDT 2015
+
+===== ALIVE Sat Sep 26 06:39:37 EDT 2015
+
+===== ALIVE Sat Sep 26 06:54:37 EDT 2015
+
+===== ALIVE Sat Sep 26 07:09:37 EDT 2015
+
+===== ALIVE Sat Sep 26 07:24:37 EDT 2015
+
+===== ALIVE Sat Sep 26 07:39:37 EDT 2015
+
+===== ALIVE Sat Sep 26 07:54:37 EDT 2015
+
+===== ALIVE Sat Sep 26 08:09:37 EDT 2015
+
+===== ALIVE Sat Sep 26 08:24:37 EDT 2015
+
+===== ALIVE Sat Sep 26 08:39:38 EDT 2015
+
+===== ALIVE Sat Sep 26 08:54:38 EDT 2015
+
+===== ALIVE Sat Sep 26 09:09:38 EDT 2015
+
+===== ALIVE Sat Sep 26 09:24:38 EDT 2015
+
+===== ALIVE Sat Sep 26 09:39:38 EDT 2015
+
+===== ALIVE Sat Sep 26 09:54:38 EDT 2015
+
+===== ALIVE Sat Sep 26 10:09:38 EDT 2015
+
+===== ALIVE Sat Sep 26 10:24:38 EDT 2015
+
+===== ALIVE Sat Sep 26 10:39:38 EDT 2015

@@ -1,0 +1,700 @@
+
+=====
+===== LOGGING STARTED Thu Sep 24 19:19:30 EDT 2015
+=====
+19:19:30.340 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:19:30.341 [debug]     protocol:rcv(): timeout:         1443129236000
+19:19:30.341 [debug]     protocol:rcv(): signature:       "signature"
+19:19:30.341 [debug]     protocol:rcv(): certificate:     "certificate"
+19:19:30.342 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:19:35.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]},"signature","certificate"])
+19:19:30.342 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:19:30.342 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:19:30.343 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:19:35.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:19:30.343 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:19:30.343 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:19:30.343 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:19:30.344 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:19:30.344 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:19:30.344 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:19:30.344 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:19:30.345 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:19:35.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:19:30.346 [debug] dispatch_to_local_service():  Command:         message
+19:19:30.346 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:19:35.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}}]}
+19:19:30.346 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:19:30.348 [debug] <0.1732.0> exo_socket: connect protos=[http]
+19:19:30.348 [debug] <0.1732.0> exo_socket: connect protos=[]
+19:19:30.348 [debug] <0.1732.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:19:30.352 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:19:30 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:19:52.308 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MTk6NTcuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NTE2Mzk5OTk5OTY1ODdlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTk3OTU5OTk5OTk5NjU5NGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:19:52.309 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:19:52.309 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MTk6NTcuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NTE2Mzk5OTk5OTY1ODdlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTk3OTU5OTk5OTk5NjU5NGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:19:52.310 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MTk6NTcuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NTE2Mzk5OTk5OTY1ODdlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTk3OTU5OTk5OTk5NjU5NGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:19:52.311 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MTk6NTcuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NTE2Mzk5OTk5OTY1ODdlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTk3OTU5OTk5OTk5NjU5NGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:19:52.313 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:19:52.313 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:19:57.000Z","longitude":-1.18310451639999996587e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38575979599999996594e+01}],"signature":"signature","certificate":"certificate"}"])
+19:19:52.314 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:19:52.315 [debug]     protocol:rcv(): timeout:         1443129236000
+19:19:52.315 [debug]     protocol:rcv(): signature:       "signature"
+19:19:52.315 [debug]     protocol:rcv(): certificate:     "certificate"
+19:19:52.316 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:19:57.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]},"signature","certificate"])
+19:19:52.320 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:19:52.320 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:19:52.321 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:19:57.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:19:52.321 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:19:52.321 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:19:52.322 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:19:52.322 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:19:52.322 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:19:52.322 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:19:52.323 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:19:52.323 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:19:57.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:19:52.324 [debug] dispatch_to_local_service():  Command:         message
+19:19:52.325 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:19:57.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}}]}
+19:19:52.325 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:19:52.329 [debug] <0.1734.0> exo_socket: connect protos=[http]
+19:19:52.329 [debug] <0.1734.0> exo_socket: connect protos=[]
+19:19:52.329 [debug] <0.1734.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:19:52.337 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:19:52 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:20:39.227 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIwOjQ0LjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDUxNjM5OTk5OTk2NTg3ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5Nzk1OTk5OTk5OTY1OTRlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:20:39.228 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:20:39.228 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIwOjQ0LjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDUxNjM5OTk5OTk2NTg3ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5Nzk1OTk5OTk5OTY1OTRlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"]
+19:20:39.229 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIwOjQ0LjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDUxNjM5OTk5OTk2NTg3ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5Nzk1OTk5OTk5OTY1OTRlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:20:39.230 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIwOjQ0LjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDUxNjM5OTk5OTk2NTg3ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5Nzk1OTk5OTk5OTY1OTRlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}]
+19:20:39.230 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:20:39.231 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Lock","timestamp":"2015-09-24T23:20:44.000Z","longitude":-1.18310451639999996587e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38575979599999996594e+01}],"signature":"signature","certificate":"certificate"}"])
+19:20:39.232 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:39.232 [debug]     protocol:rcv(): timeout:         1443129236000
+19:20:39.233 [debug]     protocol:rcv(): signature:       "signature"
+19:20:39.233 [debug]     protocol:rcv(): certificate:     "certificate"
+19:20:39.233 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:20:44.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]},"signature","certificate"])
+19:20:39.234 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:39.234 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:20:39.234 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:20:44.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:20:39.234 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:20:39.235 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:20:39.235 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:20:39.235 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:20:39.235 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:20:39.236 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:20:39.236 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:20:39.236 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:20:44.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}
+19:20:39.237 [debug] dispatch_to_local_service():  Command:         message
+19:20:39.237 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:20:44.000Z"},{"longitude",-118.31045164},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759796}]}]}}]}
+19:20:39.237 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:20:39.239 [debug] <0.1736.0> exo_socket: connect protos=[http]
+19:20:39.239 [debug] <0.1736.0> exo_socket: connect protos=[]
+19:20:39.239 [debug] <0.1736.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:20:39.243 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:20:39 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:20:46.168 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjA6NTAuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NDExMTk5OTk5OTMwMjBlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxMzM5OTk5OTk5MDM2MWUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:20:46.169 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:20:46.169 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjA6NTAuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NDExMTk5OTk5OTMwMjBlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxMzM5OTk5OTk5MDM2MWUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:20:46.170 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjA6NTAuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NDExMTk5OTk5OTMwMjBlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxMzM5OTk5OTk5MDM2MWUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:20:46.171 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjA6NTAuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0NDExMTk5OTk5OTMwMjBlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxMzM5OTk5OTk5MDM2MWUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:20:46.171 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:20:46.172 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:20:50.000Z","longitude":-1.18310441119999993020e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38575913399999990361e+01}],"signature":"signature","certificate":"certificate"}"])
+19:20:46.172 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:46.173 [debug]     protocol:rcv(): timeout:         1443129236000
+19:20:46.173 [debug]     protocol:rcv(): signature:       "signature"
+19:20:46.173 [debug]     protocol:rcv(): certificate:     "certificate"
+19:20:46.173 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:20:50.000Z"},{"longitude",-118.31044112},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759134}]}]},"signature","certificate"])
+19:20:46.174 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:46.174 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:20:46.175 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:20:50.000Z"},{"longitude",-118.31044112},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759134}]}]}
+19:20:46.175 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:20:46.175 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:20:46.176 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:20:46.176 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:20:46.176 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:20:46.177 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:20:46.177 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:20:46.177 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:20:50.000Z"},{"longitude",-118.31044112},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759134}]}]}
+19:20:46.178 [debug] dispatch_to_local_service():  Command:         message
+19:20:46.178 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:20:50.000Z"},{"longitude",-118.31044112},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759134}]}]}}]}
+19:20:46.179 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:20:46.180 [debug] <0.1738.0> exo_socket: connect protos=[http]
+19:20:46.180 [debug] <0.1738.0> exo_socket: connect protos=[]
+19:20:46.180 [debug] <0.1738.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:20:46.185 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:20:46 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:20:57.117 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjAxLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDMyMzc5OTk5OTk0NjIzZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5MTc3OTk5OTk5OTkxNDdlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:20:57.118 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:20:57.119 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjAxLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDMyMzc5OTk5OTk0NjIzZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5MTc3OTk5OTk5OTkxNDdlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"]
+19:20:57.120 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjAxLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDMyMzc5OTk5OTk0NjIzZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5MTc3OTk5OTk5OTkxNDdlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:20:57.121 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjAxLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDMyMzc5OTk5OTk0NjIzZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzU5MTc3OTk5OTk5OTkxNDdlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}]
+19:20:57.122 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:20:57.122 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Lock","timestamp":"2015-09-24T23:21:01.000Z","longitude":-1.18310432379999994623e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38575917799999999147e+01}],"signature":"signature","certificate":"certificate"}"])
+19:20:57.123 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:57.124 [debug]     protocol:rcv(): timeout:         1443129236000
+19:20:57.124 [debug]     protocol:rcv(): signature:       "signature"
+19:20:57.124 [debug]     protocol:rcv(): certificate:     "certificate"
+19:20:57.125 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:01.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]},"signature","certificate"])
+19:20:57.125 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:20:57.126 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:20:57.126 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:01.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}
+19:20:57.126 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:20:57.126 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:20:57.127 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:20:57.127 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:20:57.127 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:20:57.127 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:20:57.128 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:20:57.128 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:01.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}
+19:20:57.128 [debug] dispatch_to_local_service():  Command:         message
+19:20:57.128 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:01.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}}]}
+19:20:57.129 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:20:57.131 [debug] <0.1740.0> exo_socket: connect protos=[http]
+19:20:57.131 [debug] <0.1740.0> exo_socket: connect protos=[]
+19:20:57.131 [debug] <0.1740.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:20:57.135 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:20:57 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:06.556 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MTEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MzIzNzk5OTk5OTQ2MjNlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxNzc5OTk5OTk5OTE0N2UrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:06.557 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:21:06.557 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MTEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MzIzNzk5OTk5OTQ2MjNlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxNzc5OTk5OTk5OTE0N2UrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:21:06.558 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MTEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MzIzNzk5OTk5OTQ2MjNlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxNzc5OTk5OTk5OTE0N2UrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:06.559 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MTEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MzIzNzk5OTk5OTQ2MjNlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NTkxNzc5OTk5OTk5OTE0N2UrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:21:06.559 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:21:06.560 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:21:11.000Z","longitude":-1.18310432379999994623e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38575917799999999147e+01}],"signature":"signature","certificate":"certificate"}"])
+19:21:06.560 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:06.561 [debug]     protocol:rcv(): timeout:         1443129236000
+19:21:06.561 [debug]     protocol:rcv(): signature:       "signature"
+19:21:06.561 [debug]     protocol:rcv(): certificate:     "certificate"
+19:21:06.561 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:11.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]},"signature","certificate"])
+19:21:06.562 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:06.562 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:21:06.563 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:11.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}
+19:21:06.563 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:21:06.563 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:21:06.564 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:21:06.564 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:21:06.564 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:21:06.564 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:21:06.565 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:21:06.565 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:11.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}
+19:21:06.565 [debug] dispatch_to_local_service():  Command:         message
+19:21:06.566 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:11.000Z"},{"longitude",-118.31043238},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85759178}]}]}}]}
+19:21:06.566 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:21:06.568 [debug] <0.1742.0> exo_socket: connect protos=[http]
+19:21:06.568 [debug] <0.1742.0> exo_socket: connect protos=[]
+19:21:06.568 [debug] <0.1742.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:21:06.572 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:21:06 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:19.107 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjIzLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDI0OTA5OTk5OTk0NzI1ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzYxMTU2MDAwMDAwMjI3MTBlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:21:19.108 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:21:19.108 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjIzLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDI0OTA5OTk5OTk0NzI1ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzYxMTU2MDAwMDAwMjI3MTBlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"]
+19:21:19.109 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjIzLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDI0OTA5OTk5OTk0NzI1ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzYxMTU2MDAwMDAwMjI3MTBlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}"
+19:21:19.110 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIExvY2siLCJ0aW1lc3RhbXAiOiIyMDE1LTA5LTI0VDIzOjIxOjIzLjAwMFoiLCJsb25naXR1ZGUiOi0xLjE4MzEwNDI0OTA5OTk5OTk0NzI1ZSswMiwidmVoaWNsZVZJTiI6IjEyMzQ1Njc4OTBBQkNERUZHIiwibGF0aXR1ZGUiOjMuMzg1NzYxMTU2MDAwMDAwMjI3MTBlKzAxfV0sInNpZ25hdHVyZSI6InNpZ25hdHVyZSIsImNlcnRpZmljYXRlIjoiY2VydGlmaWNhdGUifQ=="}]
+19:21:19.111 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:21:19.111 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Lock","timestamp":"2015-09-24T23:21:23.000Z","longitude":-1.18310424909999994725e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38576115600000022710e+01}],"signature":"signature","certificate":"certificate"}"])
+19:21:19.111 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:19.112 [debug]     protocol:rcv(): timeout:         1443129236000
+19:21:19.112 [debug]     protocol:rcv(): signature:       "signature"
+19:21:19.112 [debug]     protocol:rcv(): certificate:     "certificate"
+19:21:19.112 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:23.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]},"signature","certificate"])
+19:21:19.113 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:19.113 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:21:19.113 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:23.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:19.114 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:21:19.114 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:21:19.114 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:21:19.115 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:21:19.115 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:21:19.115 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:21:19.115 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:21:19.116 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:23.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:19.116 [debug] dispatch_to_local_service():  Command:         message
+19:21:19.116 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Lock"},{"timestamp","2015-09-24T23:21:23.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}}]}
+19:21:19.117 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:21:19.118 [debug] <0.1744.0> exo_socket: connect protos=[http]
+19:21:19.118 [debug] <0.1744.0> exo_socket: connect protos=[]
+19:21:19.119 [debug] <0.1744.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:21:19.123 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:21:19 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:26.565 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:26.566 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:21:26.566 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:21:26.567 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:26.568 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:21:26.568 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:21:26.569 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:21:31.000Z","longitude":-1.18310424909999994725e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38576115600000022710e+01}],"signature":"signature","certificate":"certificate"}"])
+19:21:26.569 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:26.570 [debug]     protocol:rcv(): timeout:         1443129236000
+19:21:26.570 [debug]     protocol:rcv(): signature:       "signature"
+19:21:26.570 [debug]     protocol:rcv(): certificate:     "certificate"
+19:21:26.570 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]},"signature","certificate"])
+19:21:26.571 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:26.571 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:21:26.571 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:26.572 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:21:26.572 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:21:26.572 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:21:26.573 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:21:26.573 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:21:26.573 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:21:26.573 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:21:26.574 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:26.574 [debug] dispatch_to_local_service():  Command:         message
+19:21:26.575 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}}]}
+19:21:26.575 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:21:26.576 [debug] <0.1746.0> exo_socket: connect protos=[http]
+19:21:26.577 [debug] <0.1746.0> exo_socket: connect protos=[]
+19:21:26.577 [debug] <0.1746.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:21:26.581 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:21:26 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:26.685 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:26.686 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:21:26.686 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:21:26.687 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:26.688 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzEuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:21:26.689 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:21:26.689 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:21:31.000Z","longitude":-1.18310424909999994725e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38576115600000022710e+01}],"signature":"signature","certificate":"certificate"}"])
+19:21:26.691 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:26.691 [debug]     protocol:rcv(): timeout:         1443129236000
+19:21:26.692 [debug]     protocol:rcv(): signature:       "signature"
+19:21:26.692 [debug]     protocol:rcv(): certificate:     "certificate"
+19:21:26.692 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]},"signature","certificate"])
+19:21:26.693 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:26.693 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:21:26.693 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:26.694 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:21:26.694 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:21:26.694 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:21:26.695 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:21:26.695 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:21:26.695 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:21:26.696 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:21:26.696 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:26.696 [debug] dispatch_to_local_service():  Command:         message
+19:21:26.697 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:31.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}}]}
+19:21:26.697 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:21:26.699 [debug] <0.1748.0> exo_socket: connect protos=[http]
+19:21:26.699 [debug] <0.1748.0> exo_socket: connect protos=[]
+19:21:26.699 [debug] <0.1748.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:21:26.703 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:21:26 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:27.895 [debug] connection:handle_info(data): Data: "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzIuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:27.896 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:21:27.896 [debug] connection:handle_info(data complete): Processed: ["{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzIuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"]
+19:21:27.897 [debug] dlink_tcp:data(): Payload "{"tid":1,"cmd":"rcv","mod":"proto_json_rpc","data":"eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzIuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}"
+19:21:27.898 [debug] dlink_tcp:data(): Got [{"tid",1},{"cmd","rcv"},{"mod","proto_json_rpc"},{"data","eyJzZXJ2aWNlIjoiamxyLmNvbS9iYWNrZW5kL2xvZ2dpbmcvcmVwb3J0L3NlcnZpY2VpbnZva2VkIiwidGltZW91dCI6MTQ0MzEyOTIzNjAwMCwicGFyYW1ldGVycyI6W3sidXNlcm5hbWUiOiJkdGhpcmlleiIsInNlcnZpY2UiOiJEb29yIFVubG9jayIsInRpbWVzdGFtcCI6IjIwMTUtMDktMjRUMjM6MjE6MzIuMDAwWiIsImxvbmdpdHVkZSI6LTEuMTgzMTA0MjQ5MDk5OTk5OTQ3MjVlKzAyLCJ2ZWhpY2xlVklOIjoiMTIzNDU2Nzg5MEFCQ0RFRkciLCJsYXRpdHVkZSI6My4zODU3NjExNTYwMDAwMDAyMjcxMGUrMDF9XSwic2lnbmF0dXJlIjoic2lnbmF0dXJlIiwiY2VydGlmaWNhdGUiOiJjZXJ0aWZpY2F0ZSJ9"}]
+19:21:27.898 [debug] dlink_tcp:receive_data(): SetupAddress:  {"166.176.56.96", 18377}
+19:21:27.899 [debug] Sending protocol - proto_json_rpc:receive_message(["{"service":"jlr.com/backend/logging/report/serviceinvoked","timeout":1443129236000,"parameters":[{"username":"dthiriez","service":"Door Unlock","timestamp":"2015-09-24T23:21:32.000Z","longitude":-1.18310424909999994725e+02,"vehicleVIN":"1234567890ABCDEFG","latitude":3.38576115600000022710e+01}],"signature":"signature","certificate":"certificate"}"])
+19:21:27.899 [debug]     protocol:rcv(): service name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:27.900 [debug]     protocol:rcv(): timeout:         1443129236000
+19:21:27.900 [debug]     protocol:rcv(): signature:       "signature"
+19:21:27.900 [debug]     protocol:rcv(): certificate:     "certificate"
+19:21:27.900 [debug] Sending service_edge - service_edge_rpc:handle_remote_message(["jlr.com/backend/logging/report/serviceinvoked",1443129236000,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:32.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]},"signature","certificate"])
+19:21:27.901 [debug] service_edge:remote_msg(): service_name:    "jlr.com/backend/logging/report/serviceinvoked"
+19:21:27.902 [debug] service_edge:remote_msg(): timeout:         1443129236000
+19:21:27.902 [debug] service_edge:remote_msg(): parameters:      {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:32.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:27.902 [debug] service_edge:remote_msg(): signature:       "certificate"
+19:21:27.902 [debug] service_edge:remote_msg(): certificate:     "signature"
+19:21:27.903 [debug] authorize_rpc:authorize_remote_msg(): service: "jlr.com/backend/logging/report/serviceinvoked" 
+19:21:27.903 [debug] authorize_rpc:authorize_remote_msg(): signature:    "signature" 
+19:21:27.903 [debug] authorize_rpc:authorize_remote_msg(): certificate:  "certificate" 
+19:21:27.904 [debug] Sending authorize - authorize_rpc:authorize_remote_message(["jlr.com/backend/logging/report/serviceinvoked","signature","certificate"])
+19:21:27.904 [debug] service_edge:forward_to_local(): URL:         "http://127.0.0.1:20004"
+19:21:27.904 [debug] service_edge:forward_to_local(): Parameters:  {array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:32.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}
+19:21:27.905 [debug] dispatch_to_local_service():  Command:         message
+19:21:27.905 [debug] dispatch_to_local_service():  Args:            {struct,[{service_name,"/logging/report/serviceinvoked"},{parameters,{array,[{struct,[{"username","dthiriez"},{"service","Door Unlock"},{"timestamp","2015-09-24T23:21:32.000Z"},{"longitude",-118.31042491},{"vehicleVIN","1234567890ABCDEFG"},{"latitude",33.85761156}]}]}}]}
+19:21:27.906 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:21:27.907 [debug] <0.1750.0> exo_socket: connect protos=[http]
+19:21:27.907 [debug] <0.1750.0> exo_socket: connect protos=[]
+19:21:27.908 [debug] <0.1750.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:21:27.912 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"52","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:21:27 GMT"}]}},<<"{"jsonrpc": "2.0", "result": {"status": 0}, "id": 1}">>}
+19:21:34.238 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:21:34.239 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:02.163 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:22:02.163 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:02.171 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:22:02.171 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:24.258 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:24.259 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:25.309 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:25.309 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:34.022 [info] dlink_tcp:ping(): Pinging: "127.0.0.1":8807
+19:22:34.022 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:34.095 [debug] connection:handle_info(data): Data: "{"cmd":"ping"}"
+19:22:34.095 [debug] connection:handle_info(data): From: "166.176.56.96":18377 
+19:22:34.095 [debug] connection:handle_info(data complete): Processed: ["{"cmd":"ping"}"]
+19:22:34.096 [debug] dlink_tcp:data(): Payload "{"cmd":"ping"}"
+19:22:34.096 [debug] dlink_tcp:data(): Got [{"cmd","ping"}]
+19:22:34.096 [info] dlink_bt:ping(): Pinged from: "166.176.56.96":18377
+19:22:41.204 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:41.204 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:42.752 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:42.753 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:44.699 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:44.699 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:22:44.777 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:22:44.777 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:26:34.248 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:26:34.248 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:02.169 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:27:02.170 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:02.172 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:27:02.172 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:24.272 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:24.273 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:25.310 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:25.310 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:34.027 [info] dlink_tcp:ping(): Pinging: "127.0.0.1":8807
+19:27:34.027 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:41.205 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:41.205 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:42.754 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:42.755 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:44.700 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:44.700 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:27:44.778 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:27:44.778 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:31:34.256 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:31:34.257 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:02.176 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:32:02.177 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:32:02.177 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:02.177 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:24.287 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:24.287 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:25.311 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:25.311 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:34.034 [info] dlink_tcp:ping(): Pinging: "127.0.0.1":8807
+19:32:34.034 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:41.206 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:41.206 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:42.755 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:42.755 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:44.701 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:44.701 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:32:44.779 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:32:44.779 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:36:34.265 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:36:34.265 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:02.183 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:37:02.183 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:37:02.183 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:02.183 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:24.300 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:24.300 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:25.312 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:25.312 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:34.041 [info] dlink_tcp:ping(): Pinging: "127.0.0.1":8807
+19:37:34.041 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:41.211 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:41.211 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:42.756 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:42.756 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:44.702 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:44.702 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:37:44.780 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:37:44.780 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:41:34.271 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:41:34.271 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:02.188 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:42:02.189 [info] dlink_tcp:ping(): Pinging: "10.172.43.53":1
+19:42:02.189 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:02.189 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:24.313 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:24.313 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:25.314 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:25.314 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:34.047 [info] dlink_tcp:ping(): Pinging: "127.0.0.1":8807
+19:42:34.048 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:41.217 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:41.217 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:42.757 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:42.757 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:44.703 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:44.703 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:42:44.781 [info] dlink_tcp:ping(): Pinging: "10.203.236.116":1
+19:42:44.781 [debug] connection:handle_call(send): Sending: "{"cmd":"ping"}"
+19:44:30.833 [warning] connection:handle_cast(): Unknown info: {tcp_error,#Port<0.3743>,etimedout}
+19:44:30.834 [debug] connection:handle_info(tcp_closed): Address: "166.176.56.96":18377 
+19:44:30.834 [info] dlink_tcp:closed(): SetupAddress:  {"166.176.56.96", 18377}
+19:44:30.834 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/lights"],dlink_tcp_rpc])
+19:44:30.834 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/trunk"],dlink_tcp_rpc])
+19:44:30.835 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/lights"]
+19:44:30.835 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/panic"],dlink_tcp_rpc])
+19:44:30.835 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/lights"
+19:44:30.835 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/auto_lock"],dlink_tcp_rpc])
+19:44:30.836 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/lights"]) unavailable
+19:44:30.836 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/start"],dlink_tcp_rpc])
+19:44:30.836 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.837 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/stop"],dlink_tcp_rpc])
+19:44:30.837 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.837 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/lock"],dlink_tcp_rpc])
+19:44:30.838 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.838 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/auto_unlock"],dlink_tcp_rpc])
+19:44:30.838 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lights"]()
+19:44:30.839 [debug] Sending service_discovery - service_discovery_rpc:unregister_services([["jlr.com/bt/stoffe/unlock"],dlink_tcp_rpc])
+19:44:30.839 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/lights",dlink_tcp_rpc])
+19:44:30.839 [debug] get_module_config(): Missing component spec: rvi:component:data_link:dlink_tcp_rpc:persistent_connections{...}: [{server_opts,[{port,8807}]}]
+19:44:30.839 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lights"]()
+19:44:30.840 [debug] service_edge_rpc: Service unavailable: "jlr.com/bt/stoffe/lights":
+19:44:30.840 [debug] connection_manager:handle_call(del_by_pid): deleted Pid: <0.1064.0>, Address: {"127.0.0.1",8807}
+19:44:30.840 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/lights",dlink_tcp_rpc])
+19:44:30.841 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:44:30.841 [debug] connection:terminate(): Reason: normal 
+19:44:30.841 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lights"]()
+19:44:30.842 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:44:30.842 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/lights",dlink_tcp_rpc])
+19:44:30.842 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:44:30.843 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/trunk"]
+19:44:30.843 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/lights",dlink_tcp_rpc} now has no address.
+19:44:30.843 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:44:30.843 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/trunk"
+19:44:30.844 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:44:30.844 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/trunk"]) unavailable
+19:44:30.845 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:44:30.845 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.845 [debug] announce: service: "jlr.com/bt/stoffe/lights"
+19:44:30.845 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.846 [debug] announce: Block:   []
+19:44:30.846 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.846 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:44:30.846 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/trunk"]()
+19:44:30.846 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:44:30.847 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/trunk",dlink_tcp_rpc])
+19:44:30.847 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.847 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/trunk"]()
+19:44:30.847 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/lights"]}}]}
+19:44:30.848 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/trunk",dlink_tcp_rpc])
+19:44:30.848 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:44:30.848 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/trunk"]()
+19:44:30.849 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/trunk",dlink_tcp_rpc])
+19:44:30.849 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/panic"]
+19:44:30.849 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/trunk",dlink_tcp_rpc} now has no address.
+19:44:30.850 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/panic"
+19:44:30.850 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.851 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/panic"]) unavailable
+19:44:30.851 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.851 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.852 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.852 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.853 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.854 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.854 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.855 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/panic"]()
+19:44:30.855 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.855 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/panic",dlink_tcp_rpc])
+19:44:30.855 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:44:30.856 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/panic"]()
+19:44:30.856 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.856 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/panic",dlink_tcp_rpc])
+19:44:30.856 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/lights"]}}]}
+19:44:30.857 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/panic"]()
+19:44:30.857 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:44:30.857 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/panic",dlink_tcp_rpc])
+19:44:30.858 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_lock"]
+19:44:30.858 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/panic",dlink_tcp_rpc} now has no address.
+19:44:30.859 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.859 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/auto_lock"
+19:44:30.859 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.859 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_lock"]) unavailable
+19:44:30.860 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.860 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.861 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.861 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.862 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.862 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.862 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:44:30.863 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_lock"]()
+19:44:30.863 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.863 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_lock",dlink_tcp_rpc])
+19:44:30.864 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/lights"]}}]}
+19:44:30.864 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_lock"]()
+19:44:30.864 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:44:30.865 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_lock",dlink_tcp_rpc])
+19:44:30.865 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_lock"]()
+19:44:30.865 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_lock",dlink_tcp_rpc])
+19:44:30.866 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/start"]
+19:44:30.866 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/auto_lock",dlink_tcp_rpc} now has no address.
+19:44:30.867 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.867 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/start"
+19:44:30.867 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.867 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/start"]) unavailable
+19:44:30.868 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.868 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.869 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.870 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.870 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.870 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.871 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:44:30.871 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/start"]()
+19:44:30.871 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.872 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/start",dlink_tcp_rpc])
+19:44:30.872 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/lights"]}}]}
+19:44:30.872 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/start"]()
+19:44:30.872 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:44:30.873 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/start",dlink_tcp_rpc])
+19:44:30.873 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/start"]()
+19:44:30.874 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/start",dlink_tcp_rpc])
+19:44:30.874 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.874 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/stop"]
+19:44:30.874 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/start",dlink_tcp_rpc} now has no address.
+19:44:30.875 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.875 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/stop"
+19:44:30.875 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.875 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/stop"]) unavailable
+19:44:30.876 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.877 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.877 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.878 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.878 [debug] service_edge_rpc: Service unavailable: "jlr.com/bt/stoffe/trunk":
+19:44:30.878 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.878 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:44:30.879 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/stop"]()
+19:44:30.879 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:44:30.879 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/stop",dlink_tcp_rpc])
+19:44:30.880 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:44:30.880 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/stop"]()
+19:44:30.880 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:44:30.881 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/stop",dlink_tcp_rpc])
+19:44:30.881 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:44:30.881 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/stop"]()
+19:44:30.881 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:44:30.882 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/stop",dlink_tcp_rpc])
+19:44:30.882 [debug] announce: service: "jlr.com/bt/stoffe/trunk"
+19:44:30.882 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/lock"]
+19:44:30.883 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/stop",dlink_tcp_rpc} now has no address.
+19:44:30.883 [debug] announce: Block:   []
+19:44:30.883 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/lock"
+19:44:30.883 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:44:30.884 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/lock"]) unavailable
+19:44:30.884 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:44:30.884 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.884 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.885 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.885 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/trunk"]}}]}
+19:44:30.885 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.885 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:44:30.886 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lock"]()
+19:44:30.886 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/lock",dlink_tcp_rpc])
+19:44:30.887 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lock"]()
+19:44:30.887 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/lock",dlink_tcp_rpc])
+19:44:30.888 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/lock"]()
+19:44:30.888 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.888 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/lock",dlink_tcp_rpc])
+19:44:30.888 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.889 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_unlock"]
+19:44:30.889 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/lock",dlink_tcp_rpc} now has no address.
+19:44:30.889 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.890 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/auto_unlock"
+19:44:30.891 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.891 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_unlock"]) unavailable
+19:44:30.892 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.892 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.892 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.892 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.893 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:44:30.893 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.893 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.893 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_unlock"]()
+19:44:30.894 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/trunk"]}}]}
+19:44:30.894 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_unlock",dlink_tcp_rpc])
+19:44:30.894 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:44:30.895 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_unlock"]()
+19:44:30.895 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_unlock",dlink_tcp_rpc])
+19:44:30.896 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/auto_unlock"]()
+19:44:30.896 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/auto_unlock",dlink_tcp_rpc])
+19:44:30.896 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.897 [info] svc_disc:unregister_services(): dlink_tcp_rpc:["jlr.com/bt/stoffe/unlock"]
+19:44:30.897 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/auto_unlock",dlink_tcp_rpc} now has no address.
+19:44:30.897 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.897 [info] svc_disc:unregister_single_service_(): dlink_tcp_rpc:"jlr.com/bt/stoffe/unlock"
+19:44:30.898 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.898 [debug] notify_subscribers(dlink_tcp_rpc:["jlr.com/bt/stoffe/unlock"]) unavailable
+19:44:30.899 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.900 [debug]   notify_subscribers module: service_edge_rpc 
+19:44:30.900 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.900 [debug]   notify_subscribers module: dlink_tcp_rpc 
+19:44:30.900 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:44:30.901 [debug]   notify_subscribers module: schedule_rpc 
+19:44:30.901 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.901 [debug] notify_single_subscriber(service_edge_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/unlock"]()
+19:44:30.902 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/trunk"]}}]}
+19:44:30.902 [debug] Sending service_edge - service_edge_rpc:service_unavailable(["jlr.com/bt/stoffe/unlock",dlink_tcp_rpc])
+19:44:30.902 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:44:30.902 [debug] notify_single_subscriber(dlink_tcp_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/unlock"]()
+19:44:30.903 [debug] Sending data_link - dlink_tcp_rpc:service_unavailable(["jlr.com/bt/stoffe/unlock",dlink_tcp_rpc])
+19:44:30.904 [debug] notify_single_subscriber(schedule_rpc:service_unavailable) dlink_tcp_rpc:["jlr.com/bt/stoffe/unlock"]()
+19:44:30.904 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.904 [debug] Sending schedule - schedule_rpc:service_unavailable(["jlr.com/bt/stoffe/unlock",dlink_tcp_rpc])
+19:44:30.905 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.905 [debug] sched:service_unavailable(): Service {"jlr.com/bt/stoffe/unlock",dlink_tcp_rpc} now has no address.
+19:44:30.905 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.906 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.907 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.907 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:44:30.908 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.908 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/trunk"]}}]}
+19:44:30.908 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:44:30.909 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.909 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.909 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.910 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.911 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.911 [debug] service_edge_rpc: Service unavailable: "jlr.com/bt/stoffe/panic":
+19:44:30.912 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:44:30.912 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:44:30.912 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:44:30.912 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:44:30.913 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:44:30.913 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:44:30.913 [debug] announce: service: "jlr.com/bt/stoffe/panic"
+19:44:30.914 [debug] announce: Block:   []
+19:44:30.914 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:44:30.914 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:44:30.914 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.915 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/panic"]}}]}
+19:44:30.915 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:44:30.916 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.916 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.916 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.917 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.918 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.918 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.919 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:44:30.919 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.919 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/panic"]}}]}
+19:44:30.919 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"
+19:44:30.920 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.920 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.921 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.922 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.922 [debug]   URL: "http://127.0.0.1:20002" - Acc : ["http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.923 [debug] DISPATCH: "http://127.0.0.1:20002": services_unavailable
+19:44:30.923 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.923 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/panic"]}}]}
+19:44:30.923 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20002"
+19:44:30.924 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.924 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.925 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.926 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.926 [debug]   URL: "http://127.0.0.1:20004" - Acc : ["http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.927 [debug] DISPATCH: "http://127.0.0.1:20004": services_unavailable
+19:44:30.927 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.927 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/panic"]}}]}
+19:44:30.927 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20004"
+19:44:30.928 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.929 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.929 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.930 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.931 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20004","http://127.0.0.1:20002","http://127.0.0.1:20005","http://127.0.0.1:20003"] 
+19:44:30.931 [debug] service_edge_rpc: Service unavailable: "jlr.com/bt/stoffe/auto_lock":
+19:44:30.931 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_requestall","http://127.0.0.1:20003"}
+19:44:30.932 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_modify","http://127.0.0.1:20003"}
+19:44:30.932 [debug] rvi_local_services: {service_entry,"jlr.com/backend/invoke/service","http://127.0.0.1:20005"}
+19:44:30.932 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report","http://127.0.0.1:20002"}
+19:44:30.933 [debug] rvi_local_services: {service_entry,"jlr.com/backend/logging/report/serviceinvoked","http://127.0.0.1:20004"}
+19:44:30.933 [debug] rvi_local_services: {service_entry,"jlr.com/backend/dm/cert_create","http://127.0.0.1:20003"}
+19:44:30.933 [debug] announce: service: "jlr.com/bt/stoffe/auto_lock"
+19:44:30.933 [debug] announce: Block:   []
+19:44:30.934 [debug]   URL: "http://127.0.0.1:20003" - Acc : [] 
+19:44:30.934 [debug] DISPATCH: "http://127.0.0.1:20003": services_unavailable
+19:44:30.934 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.935 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/auto_lock"]}}]}
+19:44:30.935 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20003"
+19:44:30.936 [debug] <0.904.0> exo_socket: connect protos=[http]
+19:44:30.936 [debug] <0.904.0> exo_socket: connect protos=[]
+19:44:30.936 [debug] <0.904.0> exo_socket: after upgrade opts={ok,[{active,false},{packet,http},{mode,list}]}
+19:44:30.937 [debug] dispatch_to_local_service():  Result:          {ok,{http_response,{1,0},200,"OK",{http_shdr,undefined,undefined,undefined,undefined,"138","application/json-rpc",[{'Server',"BaseHTTP/0.3 Python/2.7.6"},{'Date',"Thu, 24 Sep 2015 23:44:30 GMT"}]}},<<"{"error": {"message": "<type 'exceptions.NameError'>:global name 'message' is not defined", "code": -32603}, "jsonrpc": "2.0", "id": null}">>}
+19:44:30.938 [debug]   URL: "http://127.0.0.1:20003" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.938 [debug]   URL: "http://127.0.0.1:20005" - Acc : ["http://127.0.0.1:20003"] 
+19:44:30.938 [debug] DISPATCH: "http://127.0.0.1:20005": services_unavailable
+19:44:30.939 [debug] dispatch_to_local_service():  Command:         services_unavailable
+19:44:30.939 [debug] dispatch_to_local_service():  Args:            {struct,[{services,{array,["jlr.com/bt/stoffe/auto_lock"]}}]}
+19:44:30.939 [debug] dispatch_to_local_service():  URL:             "http://127.0.0.1:20005"

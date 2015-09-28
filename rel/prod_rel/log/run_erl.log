@@ -1,0 +1,8 @@
+run_erl [29932] Thu Sep 24 16:41:44 2015
+Args before exec of shell:
+run_erl [29932] Thu Sep 24 16:41:44 2015
+argv[0] = sh
+run_erl [29932] Thu Sep 24 16:41:44 2015
+argv[1] = -c
+run_erl [29932] Thu Sep 24 16:41:44 2015
+argv[2] = exec /home/ec2-user/rvi_core/rel/prod_rel/bin/rvi console '' 
